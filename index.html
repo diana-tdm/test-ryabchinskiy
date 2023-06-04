@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма обратной связи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- начало 
+        10.20-10.23 - 3
+        10.31-10.37 - 6
+        10.43-10.51 - 8
+        11.10-11.37 - 27
+        общее время - 44
+
+        14.30-15.29
+        15.46-16.09
+        ---->
+
+    <div class="button-form">
+      <button class="button__form button">Форма обратной связи</button>
+    </div>
+
+    <div class="modal modal--form">
+      <div class="modal__form">
+        <button class="btn-close">
+          <i class="fa-regular fa-circle-xmark fa-2x"></i>
+        </button>
+        <div class="form__title">Форма обратной связи</div>
+
+        <div class="form__itms">
+          <label class="form__label">
+            Имя
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Введите ваше имя"
+              name="name"
+            />
+            <div class="form__label-msg form__label-msg--hidden text">
+              <!-- Запрещено использовать специальные символы -->
+            </div>
+          </label>
+
+          <label class="form__label">
+            Номер телефона
+            <input
+              class="form__input"
+              type="text"
+              placeholder="+7 (999) 999-99-99"
+              name="phone"
+            />
+            <div class="form__label-msg form__label-msg--hidden text">
+              <!-- Номер введен верно -->
+            </div>
+          </label>
+
+          <label class="form__label">
+            Сообщение
+            <textarea
+              class="form__input form__input--textarea"
+              name="text"
+              rows="10"
+              placeholder="Введите ваше сообщение"
+            ></textarea>
+            <div class="form__label-msg form__label-msg--hidden text">
+              <!-- Запрещено использовать специальные символы -->
+            </div>
+          </label>
+          <button class="form__btn button">Отправить</button>
+          <div class="text">
+            Нажимая кнопку «Отправить», вы даете согласие на обработку
+            персональных данных и соглашаетесь с политикой конфиденциальности
+          </div>
+          <div class="form__msg form__msg--hidden">
+            <!-- Форма отправлена успешно -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
